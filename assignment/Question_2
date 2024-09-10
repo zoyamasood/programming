@@ -1,0 +1,34 @@
+import numpy as np 
+import matplotlib.pyplot as plt 
+
+#Question 2
+x = np.linspace(0, 1, 50)
+
+#Question 3
+y = np.log(x)
+# print(y)
+
+z = np.exp(x)
+# print(z)
+
+#Question 4-7
+plt.scatter(x, y, label="log(x)")
+plt.scatter(x, z, label="exp(x)")
+plt.title("Natural Log and Exponential Functions")
+plt.xlabel("x-axis")
+plt.ylabel("y-axis")
+plt.legend(loc='lower right')
+plt.show()
+
+#Question 8-10
+points = np.linspace(-6.5, 6.5, 100)
+sin = np.sin(points)
+cos = np.cos(points)
+plt.plot(points, sin, label="sine")
+plt.plot(points, cos, label="cosine")
+plt.title("Sine and Cosine Functions")
+plt.xlabel("x-axis")
+plt.ylabel("y-axis")
+plt.legend(loc='lower right')
+plt.show()
+
